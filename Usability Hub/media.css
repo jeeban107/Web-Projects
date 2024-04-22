@@ -1,0 +1,126 @@
+/* Media querry  */
+
+/* Smaller than large Devices Screen */
+
+@media screen and (max-width:991px) {
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+    }
+    .nav-links.active{
+        left: 0%;
+    }
+
+    .main-nav{
+       overflow: inherit;
+       
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .example-area {
+        gap: 20px;
+    }
+
+    .example-card {
+        width: calc(50% - 10px);
+        height: 180px;
+
+    }
+
+    .cta-section {
+        padding-block: 80px;
+    }
+}
+
+
+/* Medium Devices */
+
+@media  screen and (max-width:767px) {
+    
+    .primary-button{
+        width: 80vw;
+        
+    }
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+        
+       
+    }
+   
+    .feature-card{
+        min-width: calc(50% - 10px);
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+    #bigf2{
+        flex-direction: column-reverse;
+    }
+
+    .footer-section-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .footer-links{
+        align-items: center;
+    }
+   
+}
+
+/* For Mobile Devices */
+
+@media screen and (max-width:479px) {
+   
+   :root{
+       --paddind-inline-section: 10px;
+   }
+
+
+
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+
+    .feature-card{
+        min-width: 100%;
+    }
+    
+
+}
+
+
+

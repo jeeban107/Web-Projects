@@ -1,0 +1,24 @@
+.Flex-all-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+   font-family: 'Lato', sans-serif; 
+}
+
+.btn {
+    padding: 4px 10px;
+    color: white;
+    background: #0c73eb;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+  
+}
+.my-2{
+    margin: 0 10px;
+}
+.text-center{
+    text-align: center;
+}
