@@ -97,3 +97,90 @@ var tl3 =gsap.timeline({
     tl3.to(".main",{
     backgroundColor:"#0F0D0D"
 })
+
+
+var boxes = document.querySelectorAll(".box")
+boxes.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        var att = elem.getAttribute("data-image")
+        crsr.style.width ="250px"
+        crsr.style.height="200px"
+        crsr.style.borderRadius="0"
+        crsr.style.backgroundImage=`url(${att})`
+        
+        
+    })
+
+    elem.addEventListener("mouseleave",function(){
+        elem.style.backgroundColor = "transparent"
+        crsr.style.width ="20px"
+        crsr.style.height="20px"
+        crsr.style.borderRadius="50%"
+        crsr.style.backgroundImage=`none`
+    })
+})
+
+
+
+var h4 =document.querySelectorAll(".nav h4")
+var purple =document.querySelector(".purple")
+
+// h4.forEach(function(elem){
+//     elem.addEventListener("mouseenter",function(){
+//         purple.style.display="flex"
+//         purple.style.opacity="1"
+//     })
+  
+//     elem.addEventListener("mouseleave",function(){
+//         purple.style.display="none"
+//         purple.style.opacity="0"
+//     })
+// })
+
+
+
+
+var h4 = document.querySelectorAll(".nav h4");
+var purple = document.querySelector(".purple");
+var marquee = document.querySelector(".textmove");
+var currentText = "";  // Variable to track the current text
+
+function toCamelCase(str) {
+    return str
+        .toLowerCase()
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+h4.forEach(function(elem) {
+    elem.addEventListener("mouseenter", function() {
+        if (elem.innerText.toLowerCase() !== "home") {
+            let text = toCamelCase(elem.innerText); // Convert to camel case
+            if (currentText !== text) {
+                // Fade out the current text
+                gsap.to(purple, {
+                    opacity: 0,
+                    duration: 0.02,
+                    onComplete: function() {
+                        // Update the text after fading out
+                        marquee.innerText = (text + ' ').repeat(40); // Repeat the text with spaces in between
+                        currentText = text;
+                        // Fade in the new text
+                        gsap.to(purple, { opacity: 1, duration: 0.02 });
+                    }
+                });
+            } else {
+                // If the text is the same, just show the purple div
+                gsap.to(purple, { opacity: 1, duration: 0.02 });
+            }
+        }
+    });
+
+    elem.addEventListener("mouseleave", function() {
+        if (elem.innerText.toLowerCase() !== "home") {
+            // Smoothly hide the purple div
+            gsap.to(purple, { opacity: 0, duration: 0.05 });
+        }
+    });
+});
