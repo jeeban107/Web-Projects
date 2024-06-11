@@ -125,17 +125,17 @@ boxes.forEach(function(elem){
 var h4 =document.querySelectorAll(".nav h4")
 var purple =document.querySelector(".purple")
 
-// h4.forEach(function(elem){
-//     elem.addEventListener("mouseenter",function(){
-//         purple.style.display="flex"
-//         purple.style.opacity="1"
-//     })
+h4.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        purple.style.display="flex"
+        purple.style.opacity="1"
+    })
   
-//     elem.addEventListener("mouseleave",function(){
-//         purple.style.display="none"
-//         purple.style.opacity="0"
-//     })
-// })
+    elem.addEventListener("mouseleave",function(){
+        purple.style.display="none"
+        purple.style.opacity="0"
+    })
+})
 
 
 
