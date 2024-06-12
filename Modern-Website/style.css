@@ -139,6 +139,9 @@ html, body{
   font-size: 0.9rem;
 }
 
+.btns2 button:hover { transition: all .2s ease-in-out; }
+.btns2 button:hover{ transform: scale(1.06); }
+
 .btns button:hover{
     background-color: rgb(0, 0, 0);
    
@@ -183,16 +186,94 @@ html, body{
 
 /* page-2 */
 
+
+
+
 .page2{
     position: relative;
     z-index: 9;
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
-    padding: 100px 5vw;
+    padding: 70px;
     border-bottom: 2px solid rgb(98, 98, 98);
+    display: flex;
 }
 
-.page2  h1{
+
+/*modified*/
+
+.page2-con{
+    display: flex;
+    padding: 20px 80px;
+    background-color: #914784;
+    justify-content: center;
+  /* gap: 27vw; */
+  align-items: center;
+
+background: rgba(0, 0, 0, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(0.6px);
+-webkit-backdrop-filter: blur(0.6px);
+border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+
+.page2-right img {
+    height: 50vh;
+}
+
+.page2-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 50%; */
+}
+.page2-left  h5{
+    font-size: 2rem;
+    color: #0f0d0d;
+}
+
+
+.page2-left  p{
+    font-size: 0.9rem;
+    color: #000000;
+    /* width: 200px; */
+}
+
+
+.page2-left input {
+    color: rgb(0, 0, 0);
+    padding: 20px 176px 20px 3px;
+    border-radius: 20px;
+    font-size: 1.29rem;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: 1px solid black;
+  }
+
+
+.s-bar{
+    display: flex;
+}
+
+
+.s-bar svg{
+    height: 40px;
+    
+    top: 35%;
+    position: absolute;
+    left: 10%;
+    top: 43%;
+  }
+
+
+  
+/* =====old code===== */
+
+
+/* .page2  h1{
     font-size: 7vw;
     font-weight: 500;
     color:#111;
@@ -202,11 +283,11 @@ html, body{
 {
     height: 60vh;
     width: 100%;
-    /* background-color: red; */
+    background-color: rgba(192, 177, 177, 0.57);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 5vw; */
+
     gap:40px;
 
 }
@@ -245,11 +326,13 @@ html, body{
     color: #111;
     margin-top: 20px;
 
-}
+} */
 
 
 
 /* =======page3========== */
+
+
 
 .page3{
     position: relative;
@@ -257,7 +340,7 @@ html, body{
     height: 130vh;
     width: 100%;
     position: relative;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .page3 h3{
@@ -265,6 +348,7 @@ html, body{
     font-weight: 400;
     color:white;
     margin-left: 52px;
+    padding-top: 20px;
 }
 
 /* .page3-part1{
@@ -286,7 +370,9 @@ html, body{
     margin-top: 10px;
 } */
 
-
+#page3-c{
+    padding-top: 20px;
+}
 
 .page3-container{
     display: flex;
@@ -335,7 +421,7 @@ html, body{
     z-index: 9;
     min-height: 100vh;
     width: 100%;
-    padding: 100px  40px;
+    padding: 150px  40px;
 
 }
 
