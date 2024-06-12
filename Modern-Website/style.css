@@ -55,8 +55,9 @@ html, body{
     justify-content: space-between;
     padding: 0 30px;
     position: fixed;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     z-index: 102;
+    background-color:#0f0d0d ;
     
 }
 .logo{
@@ -108,7 +109,7 @@ html, body{
 }
 
 .page1 video{
-    width:60% ;
+    width:50% ;
     margin-top: 8vw;
     position: relative;
     left: 50%;
