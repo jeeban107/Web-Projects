@@ -123,11 +123,11 @@ html, body{
 
 .Title-text{
     position: absolute;
-    bottom :5%;
+    bottom :3%;
 }
 
 .btns button{
-    padding: 8px 23px;
+    padding: 5px 15px;
   border: 1px solid rgba(255, 255, 255, 0.374);
   border-radius: 19px;
   background: rgba(0, 0, 0, 0.486);
@@ -135,7 +135,7 @@ html, body{
   left: 14%;
   position: relative;
   transition: ease-in 0.05s;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .btns button:hover{
@@ -153,8 +153,8 @@ html, body{
     
   padding: 8px 12px;
   border: 1px solid rgba(255, 255, 255, 0.37);
-  border-radius: 17px;
-  background: rgba(97, 86, 86, 0.619);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.886);
   left: 14%;
   position: relative;
   display: flex;
@@ -167,7 +167,8 @@ html, body{
 
 
 .btns2 button:hover{
-  background: rgba(0, 0, 0, 0.886);
+
+  background: rgba(97, 86, 86, 0.619);
   
 
 }
@@ -258,14 +259,14 @@ html, body{
     padding-top: 50px;
 }
 
-.page3 h1{
-    font-size: 6.8vw;
+.page3 h3{
+    font-size:2vw;
     font-weight: 400;
-    color: #111;
-    margin-left: 50px;
+    color:white;
+    margin-left: 52px;
 }
 
-.page3-part1{
+/* .page3-part1{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -282,7 +283,32 @@ html, body{
     height: 300px;
     margin-right: 100px;
     margin-top: 10px;
+} */
+
+
+
+.page3-container{
+    display: flex;
+    gap: 2vw;
+    padding: 20px 55px;
 }
+
+.box-card { transition: all .2s ease-in-out; }
+.box-card:hover { transform: scale(1.09); }
+
+.box-card{
+    text-align: center;
+}
+.box-card img{
+    height: 20vw;
+}
+
+.box-card h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color:white;
+}
+
 
 
 /* =====Cursor====== */

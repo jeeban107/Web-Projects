@@ -88,8 +88,8 @@ var tl3 =gsap.timeline({
         trigger:".page1 h1",
         scroller:".main",
         // markers:true,
-        start:"top -330%",
-        end:"top -350%",
+        start:"top -230%",
+        end:"top -250%",
         scrub:3
     }
 })
