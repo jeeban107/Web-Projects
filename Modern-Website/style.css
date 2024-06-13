@@ -483,11 +483,11 @@ body {
 
 .elem .text-div {
   /* background-color: #edbfff; */
-  height: 120px;
+  height: 53px;
   overflow: hidden;
 }
 .elem h1 {
-  font-size: 7.3vw;
+  font-size: 3.3vw;
   font-weight: 600;
   transition: all ease-out 0.5s;
 }
@@ -501,6 +501,23 @@ body {
   opacity: 1;
   transform: translateY(0%) rotate(0deg);
 }
+
+
+
+/* new page 4 */
+
+.page4 h2{
+    font-size: 3rem;
+    position: absolute;
+    padding-left: 514px;
+    padding-bottom: 73px;
+    top: 10%;
+    color: #ad6cca;
+}
+
+
+
+
 
 /* =====page5==== */
 .page5 {
