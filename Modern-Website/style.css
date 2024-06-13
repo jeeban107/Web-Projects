@@ -218,7 +218,7 @@ body {
 }
 
 .page1-desc {
-  width: 78%;
+  width: 95%;
 }
 
 .page2-left p {
@@ -251,7 +251,7 @@ body {
   top: 35%;
   position: absolute;
   left: 9%;
-  top: 37%;
+  top: 38%;
 }
 
 .page2-left h6 {
@@ -277,7 +277,10 @@ body {
     border: 1px solid rgb(30, 40, 63);
     font-size: 1rem;
     font-weight: 600;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 
@@ -307,6 +310,10 @@ body {
   }
   
 
+
+  .page1-btns img{
+    height: 13px;
+  }
 /* =====old code===== */
 
 /* .page2  h1{
@@ -441,11 +448,14 @@ body {
   position: fixed;
   background-color: #edbfff;
   z-index: 8;
-  transition: background-image ease 0.5s;
+  transition: opacity 0.3s ease, background-image 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
   mix-blend-mode: difference;
   background-position: center;
   background-size: cover;
 }
+
+
+
 
 /* ======page4==== */
 .page4 {
@@ -513,7 +523,7 @@ body {
 .page5 h2 {
   font-size: 4vw;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -531,24 +541,110 @@ body {
   border-bottom: 2px solid #dadada;
 }
 
-footer {
-  height: 90vh;
-  width: 100%;
-  background-color: #edbfff;
+
+/* new  */
+
+.maintext{
+    display: flex;
+    gap: 20px;
+    
+    align-items: center;
+    /* margin-left: -13px; */
 }
 
+.box-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.m-left{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+.box-left svg{
+    height: 20px;
+}
+
+.box-left h3{
+    margin-right: 5px;
+}
+.box-left h4{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c8c8c8b2;
+}
+.m-mid{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+.box-right h4{
+
+    font-weight: 400;
+}
+
+
+/* m-tab */
 .navtext {
-  color: white;
+    color: white;
+    display: flex;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .textmove {
+    display: inline-block;
+    padding-right: 2rem; /* Adjust the value to set the desired gap */
+  }
+  
+  
+
+/* =======footer======= */
+footer {
+  height: 70vh;
+  width: 100%;
+  background-color: #3e3c3e;
   display: flex;
+  gap: 40px;
 }
 
-.marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  display: block;
+
+
+
+
+
+
+
+  
+  /* .footer > * {
+    flex:  1 100%;
+  } */
+
+  .footer h2{
+    color: rgb(255, 255, 255);
+    font-size: 7rem;
+  }
+  .footer video{
+    height: 150px;
+    border-radius: 50%;
+     
 }
 
-.textmove {
-  display: inline-block;
-  padding-right: 2rem; /* Adjust the value to set the desired gap */
+.f-left{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.f-right{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }

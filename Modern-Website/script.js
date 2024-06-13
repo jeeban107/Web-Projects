@@ -103,11 +103,11 @@ var boxes = document.querySelectorAll(".box")
 boxes.forEach(function(elem){
     elem.addEventListener("mouseenter",function(){
         var att = elem.getAttribute("data-image")
-        crsr.style.width ="250px"
-        crsr.style.height="200px"
-        crsr.style.borderRadius="0"
+        crsr.style.width ="200px"
+        crsr.style.height="250px"
+        crsr.style.borderRadius="5px"
         crsr.style.backgroundImage=`url(${att})`
-        
+        crsr.style.mixBlendMode = "normal";
         
     })
 
@@ -117,8 +117,15 @@ boxes.forEach(function(elem){
         crsr.style.height="20px"
         crsr.style.borderRadius="50%"
         crsr.style.backgroundImage=`none`
+        crsr.style.mixBlendMode = "difference";
     })
 })
+
+
+
+
+
+
 
 
 
@@ -187,6 +194,10 @@ h4.forEach(function(elem) {
         }
     });
 });
+
+
+
+
 
 
 
