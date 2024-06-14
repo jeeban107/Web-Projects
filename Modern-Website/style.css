@@ -72,6 +72,29 @@ body {
   gap: 20px;
 }
 
+
+
+
+.nav-part1 img{
+    height: 100%;
+}
+
+
+
+.logo h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 7px;
+}
+.logo{
+    display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+
 .nav .circle {
   height: 20px;
   width: 20px;
@@ -466,14 +489,16 @@ body {
 }
 
 .elem img:nth-child(1) {
-  left: 7%;
+  left: 20%;
+  border-radius: 5px;
 }
 .elem img:nth-child(3) {
-  right: 5%;
+  right: 20%;
+  border-radius: 5px;
+
 }
 
-.elem {
-  /* background-color:cadetblue; */
+.elem { 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,7 +507,6 @@ body {
 }
 
 .elem .text-div {
-  /* background-color: #edbfff; */
   height: 53px;
   overflow: hidden;
 }
@@ -494,7 +518,7 @@ body {
 
 .elem:hover h1 {
   transform: translateY(-100%);
-  color: #edbfff;
+  color: #a678df;
 }
 
 .elem:hover img {
@@ -512,10 +536,35 @@ body {
     padding-left: 514px;
     padding-bottom: 73px;
     top: 10%;
-    color: #ad6cca;
+    color: #a678df;
 }
 
 
+
+.more{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2px;
+    height: 10vh;
+    margin-top: -22px
+}
+.page4 h3{
+    color: #adadad;
+    font-size: 1rem;
+}
+
+
+.svg:hover{
+    transform: translateY(10px);
+    transition: transform 0.5s ease;
+}
+
+.more svg{
+    height: 20px;
+    margin-top: 20px;
+}
 
 
 
@@ -606,7 +655,7 @@ body {
 
 .textmove {
   display: inline-block;
-  padding-right: 2rem; /* Adjust the value to set the desired gap */
+  padding-right: 2rem; 
 }
 
 /* =======footer======= */
@@ -617,6 +666,11 @@ footer {
   display: flex;
   gap: 200px;
   align-items: center;
+  background: linear-gradient(0deg, rgb(15, 13, 13) 0%, rgb(105, 79, 136) 100%);
+ 
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 .footer h2 {
@@ -661,3 +715,10 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+
+
+
+
